@@ -1,0 +1,37 @@
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+header{
+    /*background: grey;*/
+    /*width: 100%;*/
+    border-bottom: 1px solid red;
+}
+
+article{
+    width: 100%;
+}
+
+section{
+    width: 100%;
+    border-bottom: 1px solid red;
+
+}
+
+.overview{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-sold{
+    display: flex;
+}
