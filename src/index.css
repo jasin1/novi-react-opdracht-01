@@ -1,14 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  /*----colors -------*/
+  --color-bg: #EDEDED;
+  --color-border: #c0c0c0;
+  --color-highlight-1: #299D8F;
+  --color-highlight-2: #45819A;
+  --color-highlight-3: #E34C29;
+
 }
 
 body {
-  font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Mulish', Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  background: white;
 }
+
+img{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  display: flex;
+  gap: 1.5rem;
+  /*border: 1px solid green;*/
+}
+

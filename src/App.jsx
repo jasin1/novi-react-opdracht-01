@@ -4,6 +4,10 @@ import soldTvs from "./helpers/soldTvs.js";
 import generateName from "./helpers/nameGenerator.js";
 import tvPrice from "./helpers/tvPrice.js";
 import calcCM from "./helpers/inchesToCM.js";
+import checkImage from "./assets/check.png";
+import minusImage from  "./assets/minus.png"
+
+//------- git branch 'uitwerkingen' --------------
 
 // Opdracht 1-----------------------
 const sold = soldTvs(inventory, 'sold');
@@ -61,6 +65,7 @@ function App() {
                     </article>
                     <article>
                         <section>
+
                             <h2>Best verkochte tv</h2>
                             <div className={"best-sold"}>
                                 <div className="img-wrapper">
@@ -71,12 +76,28 @@ function App() {
                                     <span>{pricing}</span>
                                     <p>{sizes}</p>
                                     <div className="tv-options">
+
                                         <ul>
-                                            <li><img src="assets/check.png" alt=""/>wifi</li>
-                                            <li><img src="assets/minus.png" alt=""/>speech</li>
-                                            <li><img src="assets/check.png" alt=""/>hdr</li>
-                                            <li><img src="assets/check.png" alt=""/>bluetooth</li>
-                                            <li><img src="assets/minus.png" alt=""/>ambilight</li>
+                                            <li>
+                                                <div className={"icon-img"}><img src={checkImage} alt=""/></div>
+                                                <span>wifi</span>
+                                            </li>
+                                            <li>
+                                                <div className={"icon-img"}><img src={minusImage} alt=""/></div>
+                                                <span>speech</span>
+                                            </li>
+                                            <li>
+                                                <div className={"icon-img"}><img src={checkImage} alt=""/></div>
+                                                <span>hdr</span>
+                                            </li>
+                                            <li>
+                                                <div className={"icon-img"}><img src={checkImage} alt=""/></div>
+                                                <span>bluetooth</span>
+                                            </li>
+                                            <li>
+                                                <div className={"icon-img"}><img src={minusImage} alt=""/></div>
+                                                <span>ambilight</span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -85,6 +106,7 @@ function App() {
                     </article>
                 </article>
             </main>
+
 
         </>
     )
